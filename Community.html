@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <div class="title">Welcome to Dumbo</div>
+        <ul class="menu">
+            <li ><a href="./index.html">Home Page</a></li>
+            <li class="active"><a href="./Community.html">Community</a></li>
+            <li><a href="./Land Use.html">Land Use</a></li>
+            <li><a href="./Gallery.html">Gallery</a></li>
+        </ul>
+        <div class="content1">
+            <div class="banner"></div>
+            <div class="item1">
+                <div class="left">
+                    DUMBO is a mixed use community, with approximately 63,000 residents and a median age of 35. Compared to neighborhoods in Manhattan, DUMBO holds more attractive rental prices. Since the 1980’s, there has been a steady increase in residential occupancy within loft buildings. The neighborhood’s surplus of loft spaces have attracted creative commercial companies, including design companies, art galleries, and retail shops. According to the 2019 census, there are about 4,200 entrepreneurs, 24,000 workers in private companies, and 3,600 government workers. 
+                </div>
+                <div class="right">
+                    <img src="./images/img8.jpg" alt="">
+                </div>
+            </div>
+            <div class="item2">
+                <div class="img img1">
+                    <img src="./images/img9.jpg" alt="">
+                </div>
+                <div class="img img2">
+                    <img src="./images/img10.jpg" alt="">
+                </div>
+                <div class="img img3">
+                    <img src="./images/img11.jpg" alt="">
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    window.onscroll = function() {
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if(scrollTop > 70){
+            document.querySelector(".item2 .img1 img").style.animation = "animate1 2s linear forwards"
+            document.querySelector(".item2 .img2 img").style.animation = "animate1 2s linear forwards"
+            document.querySelector(".item2 .img3 img").style.animation = "animate2 2s linear forwards"
+        }
+    }
+</script>
+</html>

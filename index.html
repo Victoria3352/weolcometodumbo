@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <div class="title">Welcome to Dumbo</div>
+        <ul class="menu">
+            <li class="active"><a href="./index.html">Home Page</a></li>
+            <li ><a href="./Community.html">Community</a></li>
+            <li><a href="./Land Use.html">Land Use</a></li>
+            <li><a href="./Gallery.html">Gallery</a></li>
+        </ul>
+        <div class="content">
+            <div class="banner"></div>
+            <div class="item1">
+                Residents living between the Brooklyn and Manhattan bridges agreed to rename their neighborhood in 1978 in order to reinforce the area's identity. The community members came up with the name “DUMBO”, which stands for Down Under the Manhattan Bridge Overpass as it used to be known as Gairville. Back to the 19th and early 20th century, this area was filled with industries and warehouse buildings. It was until the developer David Walentas who bought this area in the late 20th century, was able to reform the area into an upscale residential and commercial community. Nowadays, the DUMBO area is a hotspot of dining, entertainment, and shopping with the view of the lower Manhattan skyline.
+            </div>
+            <div class="imgs">
+                <div class="img1">
+                    <img src="./images/img13.jpg" alt="">
+                </div>
+                <div class="img2">
+                    <img src="./images/img7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    window.onscroll = function() {
+    //为了保证兼容性，这里取两个值，哪个有值取哪一个
+    //scrollTop就是触发滚轮事件时滚轮的高度
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if(scrollTop > 70){
+            document.querySelector(".img1 img").style.animation = "animate1 1.5s linear forwards"
+            document.querySelector(".img2 img").style.animation = "animate2 1.5s linear forwards"
+        }
+    }
+</script>
+</html>

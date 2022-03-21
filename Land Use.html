@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <div class="title">Welcome to Dumbo</div>
+        <ul class="menu">
+            <li ><a href="./index.html">Home Page</a></li>
+            <li><a href="./Community.html">Community</a></li>
+            <li  class="active"><a href="./Land Use.html">Land Use</a></li>
+            <li><a href="./Gallery.html">Gallery</a></li>
+        </ul>
+        <div class="content2">
+            <div class="banner"></div>
+            <div class="item1 item3">
+                    <div class="img img1">
+                        <img src="./images/img2.jpg" alt="">
+                    </div>
+                    <div class="img img2">
+                        <img src="./images/img4.jpg" alt="">
+                    </div>
+            </div>
+            <div class="text">
+                DUMBO holds a wide range of land usage, including residential and commercial uses. Furthermore, a 85-acre plot of land by the bridge serves as a park known as Brooklyn Bridge Park. Over time, DUMBO has evolved into a mixed-use community containing warehouses, apartments, loft buildings, restaurants, shops, markets, and offices. Buildings along the Jay Street corridor vary greatly in size, ranging from 1 to 12 stories are likely to be occupied by studios and loft buildings of mixed use. Buildings in the Bridge Street corridor range from 4 to 7 stories, likely serving as office/residential spaces. 
+            </div>
+            <div class="item1 item2">
+                <div class="img img1">
+                    <img src="./images/img3.jpg" alt="">
+                </div>
+                <div class="img img2">
+                    <img src="./images/img12.jpg" alt="">
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    window.onscroll = function() {
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if(scrollTop > 50){
+            document.querySelector(".item2 .img1 img").style.animation = "animate5 1.5s linear forwards"
+            document.querySelector(".item2 .img2 img").style.animation = "animate6 1.5s linear forwards"
+        }
+    }
+</script>
+</html>
